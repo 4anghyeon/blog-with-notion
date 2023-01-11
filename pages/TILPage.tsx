@@ -6,6 +6,7 @@ function TilPage(props: {
   data: QueryDatabaseResponse
 }) {
   const data = props.data;
+  console.log(data)
   return (
     <div>{JSON.stringify(data)}</div>
   );
@@ -16,7 +17,6 @@ export const getStaticProps = async () => {
     auth: process.env.NOTION_TOKEN,
   });
 
-  console.log(process.env.DATABASE_ID)
   const data = await notion.databases.query({
     database_id: process.env.DATABASE_ID as string
   });
