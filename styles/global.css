@@ -1,3 +1,8 @@
 body {
     margin: 0;
 }
+
+.database-title {
+    font-size: 20px;
+    font-weight: bold;
+}

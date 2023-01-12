@@ -1,0 +1,4 @@
+.mainPadding {
+    padding-left: calc(96px + env(safe-area-inset-left));
+    padding-right: calc(96px + env(safe-area-inset-right));
+}
